@@ -1,4 +1,10 @@
 # Some Translations
+## Difficulty
+| GXT KEY | ENGLISH | FRENCH     | GERMAN           | ITALIAN | SPANISH |
+| ------- | ------- | ---------- | ---------------- | ------- | ------- |
+| EASY    | Sane    | Équilibré  | Zurechnungsfähig | Sano    | Cuerdo  |
+| NORMAL  | Insane  | Dément     | Wahnsinnig       | Folle   | Demente | 
+
 ## Level names
 | ENGLISH               | FRENCH                | GERMAN              | ITALIAN            | SPANISH             |
 | :-------------------- | :-------------------- | :------------------ | :----------------- | :------------------ |
