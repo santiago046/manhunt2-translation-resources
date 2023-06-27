@@ -1,16 +1,21 @@
 # Font and Charset Info
 
 ## Fonts
-There are three files related to fonts in Manhunt 2:
+There are four files related to fonts in Manhunt 2:
 - FONT.DAT: Contains available characters and character information (width and positions on the textures).
-- font1: Lowercase menu font located in `GLOBAL.TXD`.
-- font2: Subtitles and uppercase menu font located in `GLOBAL.TXD`.
+- font1: Lowercase menu font located in `GLOBAL.TXD`, a modified version of FF Trixie™ OT Heavy font.
+- font2: Subtitles and uppercase menu font located in `GLOBAL.TXD`, ITC American Typewriter™ Medium font.
+- t16plus: Debug font, located in `GLOBAL.TXD`.
 
 ## Manhunt 2 charset (En, Fr, Ge, It, Sp) 
 The following table shows the Unicode values and corresponding characters in font1 and font2 textures:
 
 | UNICODE | FONT1   | FONT 2        |
 | ------- | ------- | ------------- |
+| \u0001  | (BLANK) | (RIGHT)       |
+| \u0002  | (BLANK) | (LEFT)        |
+| \u0003  | (BLANK) | (UP)          |
+| \u0004  | (BLANK) | (DOWN)        |
 | \u0020  | (SPACE) | (SPACE)       |
 | \u0021  | !       | !             |
 | \u0022  | "       | "             |
@@ -238,9 +243,8 @@ The following table shows the Unicode values and corresponding characters in fon
 
 Notes:
 - The accent is missing in font1 for the character with Unicode value `\u0087`.
-- In font2, there are additional characters such as d-pad buttons and an outlined star, but they are likely not mapped in FONT.DAT.
 
-To represent buttons, it is recommended to use the following notation instead of Unicode:
+To represent PlayStation buttons, it is recommended to use the following notations/tokens instead of Unicode:
 - \~cross\~
 - \~circle\~
 - \~triangle\~
@@ -250,7 +254,12 @@ To represent buttons, it is recommended to use the following notation instead of
 - \~left\~
 - \~right\~
 
-For the trademark symbol (™), copyright symbol (©), and registered symbol (®), you can use the following notations:
+For the trademark symbol (™), copyright symbol (©), and registered symbol (®), you can use the following notations/tokens:
 - \~TM\~
 - \~(C)\~
 - \~(R)\~
+
+Other tokens:
+- \~**COLOR**\~_TEXT_\~colour\~: change the _TEXT_ color. Available **COLOR**s strings: blue, green, orange, red, yellow
+- \~nl\~\~nl\~: new line
+- \~nbsp\~: used before a number to denote space (Manhunt~nbsp~2)

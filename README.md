@@ -17,8 +17,13 @@ However, information about the Russian translation in this repository is lacking
 ## Tools for Manipulating GXT Files
 To manipulate the game's GXT files, you can use the following tools:
 1. [Manhunt Toolkit](https://github.com/Sor3nt/manhunt-toolkit) by Sor3nt
-2. [Manhunt 2 GXT Editor](https://romhackers.org/utilitarios/jogos-especificos/manhunt-2-gxt-editor/) by Caws
-3. [Manhunt 2 GXT Tool \[PC\]](https://zenhax.com/viewtopic.php?p=36590#p36590) by Delutto
+  - Supports all versions, written in PHP
+2. [Manhunt 2 GXT Tool](https://github.com/santiago046/mh2-gxttool) by santiago046 (me)
+  - Supports PSP, PS2 and PC, written in Python
+3. [Manhunt 2 GXT Editor](https://romhackers.org/utilitarios/jogos-especificos/manhunt-2-gxt-editor/) by Caws
+  - Supports PSP, PS2 and Wii, Windows Executable
+4. [Manhunt 2 GXT Tool \[PC\]](https://zenhax.com/viewtopic.php?p=36590#p36590) by Delutto
+  - Supports only PC version, Windows Executable
 
 These tools will assist you in modifying and working with the game's text files.
 
