@@ -1,4 +1,4 @@
-# Font.Dat Structure Overview
+# Font.dat Structure Overview
 
 This structure is used for packing and unpacking font data within a custom font file. It stores essential information about the font, including character mapping and texture coordinates.
 
