@@ -2,7 +2,7 @@
 
 ## Fonts
 There are four files related to fonts in Manhunt 2:
-- FONT.DAT: Contains available characters and character information (width and positions on the textures).
+- [FONT.DAT](./font-dat.md): Contains available characters and character information (width and positions on the textures).
 - font1: Lowercase menu font located in `GLOBAL.TXD`, a modified version of FF Trixie™ OT Heavy font.
 - font2: Subtitles and uppercase menu font located in `GLOBAL.TXD`, ITC American Typewriter™ Medium Condensed font.
 - t16plus: Debug font, located in `GLOBAL.TXD`.
@@ -262,4 +262,4 @@ For the trademark symbol (™), copyright symbol (©), and registered symbol (®
 Other tokens:
 - \~**COLOR**\~_TEXT_\~colour\~: change the _TEXT_ color. Available **COLOR**s strings: blue, green, orange, red, yellow
 - \~nl\~\~nl\~: new line
-- \~nbsp\~: used before a number to denote space (Manhunt~nbsp~2)
+- \~nbsp\~: used before a number to denote space (Manhunt\~nbsp\~2)
