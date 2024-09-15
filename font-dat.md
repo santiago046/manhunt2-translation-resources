@@ -2,7 +2,7 @@
 
 This structure is used for packing and unpacking font data within a custom font file. It stores essential information about the font, including character mapping and texture coordinates.
 
-```cpp
+```c
 struct FontData {
     char magic[6];            // File identifier, always set to "<FONT>"
     uint32_t charCount;       // Total number of characters in the font
