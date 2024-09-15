@@ -3,9 +3,10 @@
 ## Fonts
 There are four files related to fonts in Manhunt 2:
 - [FONT.DAT](./font-dat.md): Contains available characters and character information (width and positions on the textures).
-- font1: Lowercase menu font located in `GLOBAL.TXD`, a modified version of FF Trixie™ OT Heavy font.
-- font2: Subtitles and uppercase menu font located in `GLOBAL.TXD`, ITC American Typewriter™ Medium Condensed font.
-- t16plus: Debug font, located in `GLOBAL.TXD`.
+- Textures located in the `GLOBAL.TXD` or `global_pc.tex`:
+  * **font1**: Lowercase menu font, a modified version of FF Trixie™ OT Heavy font.
+  * **font2**: Subtitles and uppercase menu font, ITC American Typewriter™ Medium Condensed font.
+  * **t16plus**: Debug font.
 
 ## Manhunt 2 charset (En, Fr, Ge, It, Sp) 
 The following table shows the Unicode values and corresponding characters in font1 and font2 textures:
@@ -108,7 +109,7 @@ The following table shows the Unicode values and corresponding characters in fon
 | \u0079  | y       | y             |
 | \u007A  | z       | z             |
 | \u007B  | {       | {             |
-| \u007C  | \|      | \             |
+| \u007C  | \|      | \|            |
 | \u007D  | }       | }             |
 | \u007E  | (blank) | (blank)       |
 | \u007F  | (blank) | (blank)       |
@@ -241,10 +242,13 @@ The following table shows the Unicode values and corresponding characters in fon
 | \u00FE  | ™       | ™             |
 | \u00FF  | (blank) | (blank)       |
 
-Notes:
-- The accent is missing in font1 for the character with Unicode value `\u0087`.
+### Notes:
+- The accent is missing in font1 for the character with Unicode value `\u0087` (**É**).
+- The character with Unicode value `\u003B` (**;**) is missing from the font textures on PSP and PS2.
 
-To represent PlayStation buttons, it is recommended to use the following notations/tokens instead of Unicode:
+## GXT Tokens
+### Gamepad buttons
+To represent the gamepad buttons, it is recommended to use the following GXT tokens instead of Unicode:
 - \~cross\~
 - \~circle\~
 - \~triangle\~
@@ -254,12 +258,18 @@ To represent PlayStation buttons, it is recommended to use the following notatio
 - \~left\~
 - \~right\~
 
-For the trademark symbol (™), copyright symbol (©), and registered symbol (®), you can use the following notations/tokens:
+### Commercial
+For the trademark symbol (™), copyright symbol (©), and registered symbol (®), you can use the following tokens:
 - \~TM\~
 - \~(C)\~
 - \~(R)\~
 
-Other tokens:
-- \~**COLOR**\~_TEXT_\~colour\~: change the _TEXT_ color. Available **COLOR**s strings: blue, green, orange, red, yellow
+### Others
+- \~**[COLOR]**\~_TEXT_\~colour\~: change the _TEXT_ color. Available colors:
+  * blue
+  * green
+  * orange
+  * red
+  * yellow
 - \~nl\~\~nl\~: new line
 - \~nbsp\~: used before a number to denote space (Manhunt\~nbsp\~2)
